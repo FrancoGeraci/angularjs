@@ -6,7 +6,18 @@
     <link href="bootstrap.css" rel="stylesheet"/>
     <link href="bootstrap-theme.css" rel="stylesheet"/>
     <script src="angular.js"></script>
-    <script>var todoApp = angular.module("todoApp",[]);</script>
+    <script>
+        var model = {
+            user: "Franco",
+            items: [
+                {action: "Imparare Angular.js", done: true},
+                {action: "Imparare Ionic Framework", done: false},
+                {action: "Imparare html5/css3/Javascript", done: true},
+                {action: "Impacchettare il tutto!", done: false}
+            ]
+        };
+
+        var todoApp = angular.module("todoApp",[]);</script>
 
 </head>
 <body>
@@ -28,10 +39,6 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Imparare Angular.js</td><td>No</td></tr>
-                <tr><td>Imparare Ionic</td><td>No</td></tr>
-                <tr><td>Imparare HTML/CSS</td><td>Si</td></tr>
-                <tr><td>Collegare i dati su parse.com</td><td>Si</td></tr>
             </tbody>
         </table>
 
